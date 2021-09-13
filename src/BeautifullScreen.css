@@ -1,0 +1,12 @@
+.ResultContainer{
+    width:100%;
+    background-color:black;
+    border-radius: 100px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+}
+.TitleResult{
+    color:white;
+    font-size: xx-large;
+}

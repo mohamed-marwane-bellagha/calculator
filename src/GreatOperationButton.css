@@ -6,12 +6,12 @@
     position: absolute;
     left:75%;
     z-index: 2;
-    height:60%
+    /*height:55vh*/
 }
 .operationButtons{
     margin-bottom: 0.5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-color: #D6D4A0;
     border-radius: 10px;
     height: 10%;

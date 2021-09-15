@@ -1,9 +1,8 @@
 import "./AmazingNumberButton.css"
 
 function resultClear(resultat){
-    if(resultat[0]=='0'){
+    if(resultat[0]==='0'){
         resultat=resultat.substring(1)
-
     }
     return resultat
 }

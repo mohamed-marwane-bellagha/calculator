@@ -11,12 +11,15 @@ import {useState} from "react";
 
 function Calculator(){
     const [resultat, setResultat] = useState("0");
-
+    const [premierTerme, setPremierTerme]=useState("0");
+    const [secondTerme, setSecondTerme]=useState("0");
+    const [operateur, setOperateur]=useState('0');
+    const [boolTest, setBoolTest]=useState(true)
     return <>
     <BeautifullScreen resultat={resultat}></BeautifullScreen>
-    <GreatOperationButton resultat={resultat} setResultat={setResultat}></GreatOperationButton>
+    <GreatOperationButton boolTest={boolTest} setBoolTest={setBoolTest} premierTerme={premierTerme} setPremierTerme={setPremierTerme} operateur={operateur} setOperateur={setOperateur} resultat={resultat} setResultat={setResultat}></GreatOperationButton>
     <AmazingNumberButton resultat={resultat} setResultat={setResultat}></AmazingNumberButton>
-    <MagnificientEqualButton></MagnificientEqualButton>
+    <MagnificientEqualButton  boolTest={boolTest} setBoolTest={setBoolTest} resultat={resultat} setResultat={setResultat} premierTerme={premierTerme} secondTerme={secondTerme} setSecondTerme={setSecondTerme}  operateur={operateur}></MagnificientEqualButton>
 
 
 </>
